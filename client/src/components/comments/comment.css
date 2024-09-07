@@ -1,0 +1,85 @@
+.commentContainer {
+  margin-top: 6px;
+  background-color: #d3d3d3e0;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  width: 300px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.commentContainer:hover {
+  background-color: #d3d3d3bf;
+}
+.inputContainer {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+.inputContainer > span {
+  margin-top: 5px;
+}
+.inputContainer__input {
+  margin: 6px 0px ;
+  padding: 3px;
+  display: flex;
+  border: 0.5px solid lightgray;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  font-size: 14px;
+}
+.first_input {
+  margin: 0;
+}
+.commentContainer > span {
+  margin: 0 1px;
+}
+.reply {
+  font-size: 10px;
+  padding: 1px 3px;
+  border-radius: 5px;
+  color: #4e4e4e;
+  font-weight: 400;
+  cursor: pointer;
+  max-height: 15px;
+}
+.comment {
+  color: #ffffff;
+  background-color: #3672c7;
+  letter-spacing: 0.6px;
+  padding: 7px;
+  max-height: 35px;
+}
+.card_icons{
+  margin: 10px 0px 10px 20px;
+  font-size: x-large;
+}
+
+@media screen and (max-width: 810px) {
+  .card_icons{
+    font-size: x-large;
+    margin: 5px 10px;
+  }
+  .inputContainer{
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .inputContainer__input {
+    width:40vw;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card_icons{
+      font-size: large;
+      margin: 11px 3px;
+  }
+  .inputContainer{
+    justify-content: center;
+    margin: 5px;
+  }
+}

@@ -1,0 +1,243 @@
+.heading{
+    font-size: 25px;
+    font-weight: 400;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+/* Contact form */
+.form1-main{
+  max-width: 80vw;
+}
+.contact-form-container {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom:  70px;
+    width: 40vw;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group textarea {
+    resize: vertical;
+}
+.button3 {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button3:hover {
+    background-color: #133e6b;
+}
+.response-message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* AddNews form */
+.news1-container{
+    max-width: 80vw;
+}
+.form-container {
+    padding: 20px 10px;
+    border-radius: 8px;
+    width: 80vw;
+}
+form div {
+    margin-bottom: 15px;
+}
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    margin: 0px 25px 0 0;
+    width: 15vw;
+}
+.form-input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #bebebe;
+}
+textarea {
+    resize: vertical;
+}
+.button4 {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    margin: 8px 15px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button4:hover {
+    background-color: #16a085;
+}
+
+/* CreateUserProfile CSS */
+.profile{
+  display:flex;
+  justify-content: center;
+}
+.create-profile-container {
+  margin: 40px 40px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  max-width: 70vw;
+}
+.create-profile-container h2 {
+  margin-bottom: 20px;
+}
+.create-profile-container form input,
+.create-profile-container form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.create-profile-container form button {
+  background: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 0;
+}
+.create-profile-container form button:hover {
+  background: #e55337;
+}
+
+/* Profile list */
+.profile-list-container {
+  max-width: 90vw;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid grey;
+  background-color: #ffffff;
+  color: black;
+  text-align: center;
+  margin: 40px;
+  height:90vh;
+}
+.users{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px;
+  font-size: 16px;
+}
+.card-icons{
+  display: inherit;
+  font-size: x-large;
+  gap: 10px;
+  padding: 10px;
+}
+.names{
+  border: 2px solid grey;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 5px;
+}
+.profile-list-container ul {
+  list-style: none;
+  padding: 0;
+}
+.profile-list-container ul li {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  padding: 15px 25px;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+.profile-list-container ul li:hover {
+  background: #b3b3b3;
+}
+.profile-list-container ul li img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 5px 20px;
+}
+
+/* Analytics Dashboard */
+.dashboard-container {
+  padding: 20px;
+  background: #f4f4f4;
+  min-height: 100vh;
+}
+.dashboard-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.dashboard-charts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.chart {
+  width: 45%;
+  margin: 20px 0;
+}
+.top-articles {
+  margin-top: 40px;
+  text-align: center;
+}
+.top-articles h2 {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 800px) {
+  .card-icons{
+    font-size:medium;
+  }
+}
+@media screen and (max-width: 500px) {
+  .users{
+    margin: 0;
+  }
+  .card-icons{
+    font-size: small;
+  }
+  .profile-list-container ul li {
+    display: contents;
+  }
+  .profile-list-container ul{
+    margin: 10px 0;
+    border: 0.5px solid grey;
+    border-radius: 10px;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,78 @@
+/* Body light or darker themes */
+.standard {
+    background-image: linear-gradient(100deg, #2c3e50, #062e3f);
+    color: #ffdfdb;
+    transition: 0.3s linear;
+}
+
+.light {
+    background-image: linear-gradient(100deg, #daecf5, #ffffff);
+    color: #1a150e;
+    transition: 0.3s linear;
+}
+
+.darker {
+    background-image: linear-gradient(100deg, #001214, #001f29);
+    color: white;
+    transition: 0.3s linear;
+}
+
+/* Theme buttons div */
+.flexrow-container {
+    align-items: center;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 5px;
+}
+
+.theme-selector {
+    border: 1px solid #d1dae3;
+    border-radius: 100%;
+    height: 4vh;
+    margin: 0 8px;
+    transition: transform 150ms ease-in-out, box-shadow 200ms ease-in-out;
+    width: 2.5vw;
+}
+
+.theme-selector:hover { 
+    box-shadow: white 0 0 8px;
+    cursor: pointer;
+}
+
+.theme-selector:active {
+    transform: scale(0.95);
+}
+
+.standard-theme {
+    background-image: linear-gradient(100deg, #4e4a4a, #062e3f);
+}
+
+.light-theme {
+    background-image: linear-gradient(100deg, #d4f1ff, #ececec);
+}
+
+.darker-theme {
+    background-image: linear-gradient(100deg, #001214, #001f29);
+}
+
+
+/* Button themes */
+.button1 {
+    border: none;
+    outline: none; 
+    transition: box-shadow 200ms ease, background-color 200ms ease-in-out;
+    margin: 5px 10px;
+    padding: 5px 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: black;
+    font-size: 14px;
+    background-image: linear-gradient(100deg, #dddbdb, #f7f0f0);
+}
+
+.button1:hover{
+    background-color: rgb(107, 107, 107);
+    cursor: pointer;
+}
+
